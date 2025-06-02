@@ -30,12 +30,29 @@ This allows you to use your trained UnivNet model as a part of a full generative
 3. Waveform Reconstruction  
 - The UnivNet vocoder takes these mel-spectrograms and reconstructs final audio using your own trained weights.
 
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/tradwifi802-11b/SAO-with-univnet
+cd SAO-with-univnet
+pip install -r requirements.txt
+```
+
 ## Updated Dependencies
 
 Please make sure the following additional dependencies are installed:
 
 ```bash
 pip install stable-audio-tools einops torchaudio omegaconf
+```
+
+## Execution
+
+**Note:** `The generation duration is controlled by the seconds_total parameter inside sao.py`
+```bash
+python sao.py
 ```
 
 ## Notes

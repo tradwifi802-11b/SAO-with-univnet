@@ -89,5 +89,5 @@ entropy_std = np.std(entropies)
 print(f"Diversity Score: {div_score:.4f}")
 print(f"Spectral Entropy: mean = {entropy_mean:.4f}, std = {entropy_std:.4f}")
 
-plot_tsne(embeddings, filenames, output_path="tsne_output.png")
-save_csv(folder, filenames, entropies, div_score, output_file="audio_eval_results.csv")
+plot_tsne(embeddings, filenames, output_path="./eval/tsne_output.png")
+save_csv(folder, filenames, entropies, div_score, output_file="./eval/audio_eval_results.csv")

@@ -42,7 +42,7 @@ torchaudio.save("output.wav", output, sample_rate)
 
 process_file('output.wav')
 inference(
-    checkpoint_path="chkpt/wokerun1_0314.pt",
+    checkpoint_path="chkpt/wokerun1_0291.pt",
     input_folder="mel",
     output_folder="output",
     config_path="config/config.yaml"
